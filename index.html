@@ -1,120 +1,85 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>وبلاگ - وبسایت حرفه‌ای</title>
-  <link rel="icon" href="assets/img/logo/favicon.png">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تیمچه - نمونه کارها</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .section a {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .section a:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="header_area">
+
     <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="logo">
-            <a href="index.html"><img src="assets/img/logo/logo.png" alt="وبلاگ"></a>
-          </div>
+        <h1>تیمچه - نمونه کارها</h1>
+
+        <div class="section">
+            <a href="logos.html">🎨 نمونه لوگوها</a>
         </div>
-        <div class="col-6 text-right">
-          <nav class="main_menu">
-            <ul>
-              <li><a href="index.html">خانه</a></li>
-              <li><a href="about.html">درباره ما</a></li>
-              <li><a href="services.html">خدمات</a></li>
-              <li><a href="blog.html">وبلاگ</a></li>
-              <li><a href="contact.html">تماس با ما</a></li>
-            </ul>
-          </nav>
+
+        <div class="section">
+            <a href="catalogs.html">📘 نمونه کاتالوگ‌ها</a>
         </div>
-      </div>
+
+        <div class="section">
+            <a href="reels.html">🎥 نمونه ریلزها</a>
+        </div>
+
+        <div class="section">
+            <a href="motions.html">🎬 نمونه موشن‌ها</a>
+        </div>
     </div>
-  </header>
 
-  <!-- Blog Section -->
-  <div class="blog_area section-padding">
-    <div class="container">
-      <div class="row">
-        <!-- Main Blog Posts -->
-        <div class="col-lg-8">
-          <div class="single_blog">
-            <div class="blog_img">
-              <img src="assets/img/blog/post1.jpg" alt="">
-              <a href="#" class="meta_date">15 JUN</a>
-            </div>
-            <div class="blog_content">
-              <h3><a href="single_post.html">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چا</a></h3>
-              <p>رعایت CQC در صنایع بهداشتی و مراقبت اجتماعی ضروری است اما نرم افزار مناسب است.</p>
-              <a href="single_post.html" class="readmore_btn">ادامه مطلب <i class="fas fa-angle-right"></i></a>
-            </div>
-          </div>
-          <div class="single_blog">
-            <div class="blog_img">
-              <img src="assets/img/blog/post2.jpg" alt="">
-              <a href="#" class="meta_date">10 JUN</a>
-            </div>
-            <div class="blog_content">
-              <h3><a href="single_post.html">متن دوم برای نمایش در وبلاگ</a></h3>
-              <p>این مطلب شامل اطلاعات مفیدی در مورد رعایت اصول بهداشتی و مدیریت بهینه است.</p>
-              <a href="single_post.html" class="readmore_btn">ادامه مطلب <i class="fas fa-angle-right"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar -->
-        <div class="col-lg-4">
-          <div class="sidebar">
-            <div class="widget">
-              <h3>خبرنامه</h3>
-              <form action="#">
-                <input type="email" placeholder="آدرس ایمیل خود را وارد کنید">
-                <button type="submit" class="submit_btn">اشتراک</button>
-              </form>
-            </div>
-            <div class="widget">
-              <h3>پست‌های محبوب</h3>
-              <ul>
-                <li><a href="#">پست اول</a></li>
-                <li><a href="#">پست دوم</a></li>
-                <li><a href="#">پست سوم</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Footer Section -->
-  <footer class="footer_area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="footer_logo">
-            <a href="index.html"><img src="assets/img/logo/footer_logo.png" alt="Footer Logo"></a>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <p>تمامی حقوق محفوظ است © 2025</p>
-        </div>
-        <div class="col-lg-4">
-          <div class="footer_social">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/main.js"></script>
 </body>
 </html>
