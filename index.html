@@ -4,50 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>تیمچه - نمونه کارها</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: #f0f0f0;
             text-align: center;
-            background-color: #f4f4f4;
-            padding: 20px;
             margin: 0;
+            padding: 0;
             direction: rtl;
         }
 
         .container {
             max-width: 900px;
-            margin: 0 auto;
+            margin: 20px auto;
             background: white;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
 
         h1 {
             color: #333;
         }
 
-        .nav-links {
-            list-style: none;
-            padding: 0;
+        .section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
         }
 
-        .nav-links li {
-            margin: 10px 0;
-        }
-
-        .nav-links a {
+        .section a {
             display: block;
-            padding: 12px;
+            width: 100%;
+            max-width: 400px;
             background: #007bff;
             color: white;
+            padding: 15px;
             text-decoration: none;
-            border-radius: 5px;
+            font-size: 18px;
+            border-radius: 8px;
             transition: 0.3s;
         }
 
-        .nav-links a:hover {
+        .section a:hover {
             background: #0056b3;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
         }
     </style>
 </head>
@@ -55,12 +63,22 @@
 
     <div class="container">
         <h1>تیمچه - نمونه کارها</h1>
-        <ul class="nav-links">
-            <li><a href="logos.html">نمونه لوگوها</a></li>
-            <li><a href="catalogs.html">نمونه کاتالوگ‌ها</a></li>
-            <li><a href="reels.html">نمونه ریلزها</a></li>
-            <li><a href="motions.html">نمونه موشن‌ها</a></li>
-        </ul>
+
+        <div class="section">
+            <a href="logos.html">🎨 نمونه لوگوها</a>
+        </div>
+
+        <div class="section">
+            <a href="catalogs.html">📘 نمونه کاتالوگ‌ها</a>
+        </div>
+
+        <div class="section">
+            <a href="reels.html">🎥 نمونه ریلزها</a>
+        </div>
+
+        <div class="section">
+            <a href="motions.html">🎬 نمونه موشن‌ها</a>
+        </div>
     </div>
 
 </body>
